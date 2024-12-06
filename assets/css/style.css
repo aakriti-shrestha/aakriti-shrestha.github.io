@@ -374,7 +374,9 @@ h3 {
 }
 
 .card {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card .role {
@@ -694,4 +696,51 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+
+
+
+}
+
+
+.recipe-content {
+  max-width: 900px;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-content h2 {
+  color: #333;
+  border-bottom: 2px solid #e1306c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.recipe-content img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.recipe-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.recipe-content ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.recipe-content li {
+  margin-bottom: 10px;
+}
+
+.recipe-content strong {
+  color: #e1306c;
 }
