@@ -1,3 +1,14 @@
+.body
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
 .profile-pic {
   position: absolute;
   max-width: 130px;
@@ -520,7 +531,7 @@ a.hoverline:hover {
 }
 
 .card.medium .card-image {
-  height: 400;
+  height: auto;
 }
 
 .card-action a.btn-floating {
@@ -736,6 +747,11 @@ small {
   list-style-type: circle;
   margin-left: 20px;
 }
+.recipe-content ul li ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
 
 .recipe-content li {
   margin-bottom: 10px;
@@ -743,4 +759,62 @@ small {
 
 .recipe-content strong {
   color: #e1306c;
+}
+
+
+.card-image {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 20;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about-text {
+  flex: 1 1 600px;
+}
+
+.about-text p {
+  margin-bottom: 20px;
 }
