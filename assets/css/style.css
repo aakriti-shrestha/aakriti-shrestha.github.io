@@ -780,6 +780,7 @@ small {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .card-image:hover .overlay {
